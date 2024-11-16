@@ -1,13 +1,13 @@
 # Git y Github
 
-### ¿Que son Git y Github?
+## ¿Que son Git y Github?
 - **Git =>** 
     - Software de control de versiones, solo guarda los cambios especificos.
     - Creador Linus Torvalds, es Open Source.
     - Anteriormente era un problema el trabajar en proyecdtos grandes, es un estandar actualmente muy usado.
     - Aumenta productividad y se utiliza a traves de la terminal.
 
-### Configuracion Inicial de `git init` y `config`
+## Configuracion Inicial de `git init` y `config`
 ```
 // Confirmar version
 git --version
