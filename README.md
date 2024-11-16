@@ -52,7 +52,7 @@ drwxrwxr-x 8 leugim leugim 4.0K Nov 16 17:30 .git
 -rw-rw-r-- 1 leugim leugim 1.5K Nov 16 17:32 README.md
 ```
 
-Cuando se realizan cambios se puede conocer el stado de los archivos con el comando `git status`
+Cuando se realizan cambios se puede conocer el estado de los archivos con el comando `git status`
 ```
 ┌─(~/Workspace/git-github)───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────(leugim@terminator:pts/0)─┐
 └─(17:32:12 on main ✹)──> git status                                                                                                                                                     ──(Sat,Nov16)─┘
@@ -67,3 +67,25 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
+Para agregar un archivo se utiliza el comando `git add <Archivo>` esto hace que el archivo entre a stage pero no agregado completamente "no comiteado".
+```
+┌─(~/Workspace/git-github)───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────(leugim@terminator:pts/0)─┐
+└─(17:33:07 on main ✹)──> git add README.md                                                                                                                                              ──(Sat,Nov16)─┘
+┌─(~/Workspace/git-github)───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────(leugim@terminator:pts/0)─┐
+└─(17:45:32 on main ✹)──> git status                                                                                                                                                     ──(Sat,Nov16)─┘
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+```
+Una manera grafica de verlo es la siguiente:
+![Staging](./img/Staging.png)
+
+Flujo de trabajo normal:
+![Flujo de trabajo](./img/Flujo-de-trabajo.png)
+
+Para sacarlo de staging se puede utilizar el comando `git rm --cached <Archivo>`
+Para guardarlos en el repositorio despues que se encuentre en staging el comando es `git commit -m '<mensaje>'`
