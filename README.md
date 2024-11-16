@@ -39,3 +39,31 @@ user.name=<name>
 user.email=<email@gmail.com>
 init.defaultbranch=main
 ```
+
+## Comandos Basicos de Git: add, commit y log
+El comando `git init` crea una carpte oculta con el nombre `.git` donde se guarda toda la informacion de los cambios realizados.
+```
+┌─(~/Workspace/git-github)───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────(leugim@terminator:pts/0)─┐
+└─(17:32:07 on main ✹)──> ls -lha                                                                                                                                                        ──(Sat,Nov16)─┘
+total 16K
+drwxrwxr-x 3 leugim leugim 4.0K Nov 15 01:23 .
+drwxrwxr-x 5 leugim leugim 4.0K Nov 15 01:23 ..
+drwxrwxr-x 8 leugim leugim 4.0K Nov 16 17:30 .git
+-rw-rw-r-- 1 leugim leugim 1.5K Nov 16 17:32 README.md
+```
+
+Cuando se realizan cambios se puede conocer el stado de los archivos con el comando `git status`
+```
+┌─(~/Workspace/git-github)───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────(leugim@terminator:pts/0)─┐
+└─(17:32:12 on main ✹)──> git status                                                                                                                                                     ──(Sat,Nov16)─┘
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
