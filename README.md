@@ -123,3 +123,19 @@ Date:   Thu Nov 14 21:23:16 2024 -0400
 
     Initial commit
 ```
+## Ramas y Fusión de Cambios: branch, merge, switch y checkout
+### Ramas|Branches
+El concepto de ramas es creo para poder trabajar de manera aislada a las demas personas:
+![Ramas](./img/Branches.png)
+
+Existen distintas manera de crear y cambiar ramas las cuales son:
+- Para conocer en que rama uno se encuentra utiliza el comando `git branch`
+- Para crear una nueva rama se utiliza el comando `git branch <Nombre rama>`
+- Para cambiar a otra rama se utiliza el comando `git checkout <nombre rama a cambiar>`
+- Para cambiar a otra rama se utiliza el comando `git switch <nombre rama a cambiar>`
+- Para crear y cambiar a esa nueva rama se utiliza el comando `git checkout -b <nombre nueva rama>`
+- Para crear y cambiar a esa nueva rama se utiliza el comando `git switch -b <nombre nueva rama>`
+### Merge|Fusion
+Para fusionar los cambios de una rama a otra es necesario utilizar el comando `git merge`. Supongamos que nos encontramos en la rama `main` y queremos fusionar los cambios de una rama individual con el nombre `rama-1`, entonces es necesario situarce en la rama `main` y ejecutar el comando `git merge rama-1` es decir indicar a la rama main que cambios de que rama se va a traer para fusionarlos.
+### Eliminar o borrar una rama
+Para eliminar una rama de manera local que no se utilizara mas se utiliza el comando `git branch -D <nombre rama a eliminar>`
