@@ -89,3 +89,37 @@ Flujo de trabajo normal:
 
 Para sacarlo de staging se puede utilizar el comando `git rm --cached <Archivo>`
 Para guardarlos en el repositorio despues que se encuentre en staging el comando es `git commit -m '<mensaje>'`
+
+### Logs
+Para ver la bitacora de los comandos `git log`
+```
+commit 22cba934950c50f24b49bff34dd764d47711747a (HEAD -> main)
+Author: Junior <miguel.ajr89@gmail.com>
+Date:   Sat Nov 16 18:00:26 2024 +0000
+
+    Comandos agregados
+
+commit d11b6912e05393e5aaa179be1946b689cce86a90
+Author: Junior <miguel.ajr89@gmail.com>
+Date:   Sat Nov 16 17:56:41 2024 +0000
+
+    Agregados ejemplos de comandos e imagenes
+
+commit b816250b44e6a849ba3ac15a9e5ac20226ef795c
+Author: Junior <miguel.ajr89@gmail.com>
+Date:   Sat Nov 16 17:30:55 2024 +0000
+
+    Areglando subtitulos de clases
+
+commit b8672592e208b0b3a9d5a46eafd57c9beaff351e (origin/main, origin/HEAD)
+Author: Junior <miguel.ajr89@gmail.com>
+Date:   Fri Nov 15 01:42:56 2024 +0000
+
+    Agregando primeras notas
+
+commit d081e382506f4bfdb5b4ec563f72535bd1f4e2a5
+Author: Junior <miguel.ajr89@gmail.com>
+Date:   Thu Nov 14 21:23:16 2024 -0400
+
+    Initial commit
+```
