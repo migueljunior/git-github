@@ -268,4 +268,132 @@ Deleted tag 'v1.0' (was 47ba34d)
 ```
 ### git checkout
 Si se quiere hacer una revision de un punto en particular sin eliminar el avance realizado se puede realizar con el comando `git checkout <identificador commit>`
-Pra volver al punto del principio se utiliza el comando `git checkout main`
+Para volver al punto del principio se utiliza el comando `git checkout main`
+Ejemplo:
+- Antes de utilizar `git checkout` con un id especifico
+```
+commit 24c379e91797db4c5e5e2288d054d14183c77623 (HEAD -> main, origin/main, origin/HEAD)
+Author: Junior <miguel.ajr89@gmail.com>
+Date:   Sun Jan 12 21:58:57 2025 -0400
+
+    Leccion de git tag y git checkout
+
+commit f7c4c6478c639141a3de20288a5f48ae164558b9
+Author: Junior <miguel.ajr89@gmail.com>
+Date:   Sun Jan 12 21:39:02 2025 -0400
+
+    Volviendo en el tiempo, git revert y git reset | Arreglo de un typo
+
+commit 9a916177083fc26578a2a03c81805b421e271f76
+Author: Junior <miguel.ajr89@gmail.com>
+Date:   Wed Jan 8 03:06:56 2025 +0000
+
+    Ultimo commit desde server
+
+commit f016ff247b9750c11c2fd03a0db684312ed6fe70
+Author: Junior <miguel.ajr89@gmail.com>
+Date:   Sat Nov 16 18:20:28 2024 +0000
+
+    Agregando notas de trabajo con ramas
+
+commit d3234782754c19e16ed6f6d00d1273a44195e157
+Author: Junior <miguel.ajr89@gmail.com>
+Date:   Sat Nov 16 18:05:21 2024 +0000
+
+    Agregando como ver logs
+
+commit 22cba934950c50f24b49bff34dd764d47711747a
+Author: Junior <miguel.ajr89@gmail.com>
+Date:   Sat Nov 16 18:00:26 2024 +0000
+
+    Comandos agregados
+```
+- Despues de utilizar `git checkout` con un id especifico
+```
+┌─(~/Workspace/git-github)─────────────────────────────────────────────────────────────────────────────────────────────────(junior@JRODRIGUEV-NH01:pts/4)─┐
+└─(22:00:46 on main)──> git checkout 22cba934950c50f24b49bff34dd764d47711747a                                                               ──(Sun,Jan12)─┘
+Note: switching to '22cba934950c50f24b49bff34dd764d47711747a'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 22cba93 Comandos agregados
+```
+- Revisando el log con `git log`
+```
+commit 22cba934950c50f24b49bff34dd764d47711747a (HEAD)
+Author: Junior <miguel.ajr89@gmail.com>
+Date:   Sat Nov 16 18:00:26 2024 +0000
+
+    Comandos agregados
+
+commit d11b6912e05393e5aaa179be1946b689cce86a90
+Author: Junior <miguel.ajr89@gmail.com>
+Date:   Sat Nov 16 17:56:41 2024 +0000
+
+    Agregados ejemplos de comandos e imagenes
+
+commit b816250b44e6a849ba3ac15a9e5ac20226ef795c
+Author: Junior <miguel.ajr89@gmail.com>
+Date:   Sat Nov 16 17:30:55 2024 +0000
+
+    Areglando subtitulos de clases
+
+commit b8672592e208b0b3a9d5a46eafd57c9beaff351e
+Author: Junior <miguel.ajr89@gmail.com>
+Date:   Fri Nov 15 01:42:56 2024 +0000
+
+    Agregando primeras notas
+
+commit d081e382506f4bfdb5b4ec563f72535bd1f4e2a5
+Author: Junior <miguel.ajr89@gmail.com>
+Date:   Thu Nov 14 21:23:16 2024 -0400
+
+    Initial commit
+```
+- Volviendo al estado inicial con `git checkout main`
+```
+┌─(~/Workspace/git-github)─────────────────────────────────────────────────────────────────────────────────────────────────(junior@JRODRIGUEV-NH01:pts/4)─┐
+└─(22:01:55 on 22cba93)──> git checkout main                                                                                                ──(Sun,Jan12)─┘
+Previous HEAD position was 22cba93 Comandos agregados
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+```
+- Revisando el log con `git log` **Como era en un principio**
+```
+commit 24c379e91797db4c5e5e2288d054d14183c77623 (HEAD -> main, origin/main, origin/HEAD)
+Author: Junior <miguel.ajr89@gmail.com>
+Date:   Sun Jan 12 21:58:57 2025 -0400
+
+    Leccion de git tag y git checkout
+
+commit f7c4c6478c639141a3de20288a5f48ae164558b9
+Author: Junior <miguel.ajr89@gmail.com>
+Date:   Sun Jan 12 21:39:02 2025 -0400
+
+    Volviendo en el tiempo, git revert y git reset | Arreglo de un typo
+
+commit 9a916177083fc26578a2a03c81805b421e271f76
+Author: Junior <miguel.ajr89@gmail.com>
+Date:   Wed Jan 8 03:06:56 2025 +0000
+
+    Ultimo commit desde server
+
+commit f016ff247b9750c11c2fd03a0db684312ed6fe70
+Author: Junior <miguel.ajr89@gmail.com>
+Date:   Sat Nov 16 18:20:28 2024 +0000
+
+    Agregando notas de trabajo con ramas
+```
