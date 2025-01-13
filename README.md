@@ -155,3 +155,117 @@ Los problemas que resuelven:
 - Correccion de errores
 - Limpieza del historial
 - Manejo de conflictos entre algunas ramas.
+## Gestion de versiones: tag y checkout
+- `git tag` Un tag es como una etiqueta que puedes aplicar a un commit para identificarlo facilmente en el futuro.
+- `git checkout` Cambiar de una rama o un commit especifico a otro.
+Uso de `git tag` para aplicar al head que se encuentra por el momento `git tag -a v1.0 -m "Mi primera version"`
+
+### git tag
+Antes de usar `git tag`
+```
+commit f7c4c6478c639141a3de20288a5f48ae164558b9 (HEAD -> main)
+Author: Junior <miguel.ajr89@gmail.com>
+Date:   Sun Jan 12 21:39:02 2025 -0400
+
+    Volviendo en el tiempo, git revert y git reset | Arreglo de un typo
+
+commit 9a916177083fc26578a2a03c81805b421e271f76 (origin/main, origin/HEAD)
+Author: Junior <miguel.ajr89@gmail.com>
+Date:   Wed Jan 8 03:06:56 2025 +0000
+
+    Ultimo commit desde server
+
+commit f016ff247b9750c11c2fd03a0db684312ed6fe70
+Author: Junior <miguel.ajr89@gmail.com>
+Date:   Sat Nov 16 18:20:28 2024 +0000
+
+    Agregando notas de trabajo con ramas
+```
+Despues de Utilizar `git tag`
+```
+commit f7c4c6478c639141a3de20288a5f48ae164558b9 (HEAD -> main, tag: v1.0)
+Author: Junior <miguel.ajr89@gmail.com>
+Date:   Sun Jan 12 21:39:02 2025 -0400
+
+    Volviendo en el tiempo, git revert y git reset | Arreglo de un typo
+
+commit 9a916177083fc26578a2a03c81805b421e271f76 (origin/main, origin/HEAD)
+Author: Junior <miguel.ajr89@gmail.com>
+Date:   Wed Jan 8 03:06:56 2025 +0000
+
+    Ultimo commit desde server
+
+commit f016ff247b9750c11c2fd03a0db684312ed6fe70
+Author: Junior <miguel.ajr89@gmail.com>
+Date:   Sat Nov 16 18:20:28 2024 +0000
+
+    Agregando notas de trabajo con ramas
+```
+Solamente utilizando `git tag` me mostrara la lista de solo de las etiquetas en el repositorio
+```
+┌─(~/Workspace/git-github)─────────────────────────────────────────────────────────────────────────────────────────────────(junior@JRODRIGUEV-NH01:pts/4)─┐
+└─(21:46:21 on main ✹)──> git tag
+v1.0
+```
+Para ver los commits de una etiqueta especifica se utiliza el comando `git show <version>`
+```
+┌─(~/Workspace/git-github)─────────────────────────────────────────────────────────────────────────────────────────────────(junior@JRODRIGUEV-NH01:pts/4)─┐
+└─(21:46:42 on main ✹)──> git show v1.0                                                                                                     ──(Sun,Jan12)─┘
+tag v1.0
+Tagger: Junior <miguel.ajr89@gmail.com>
+Date:   Sun Jan 12 21:44:16 2025 -0400
+
+Mi primera version
+
+commit f7c4c6478c639141a3de20288a5f48ae164558b9 (HEAD -> main, tag: v1.0)
+Author: Junior <miguel.ajr89@gmail.com>
+Date:   Sun Jan 12 21:39:02 2025 -0400
+
+    Volviendo en el tiempo, git revert y git reset | Arreglo de un typo
+
+diff --git a/README.md b/README.md
+index b3c435a..3b373a5 100644
+--- a/README.md
++++ b/README.md
+@@ -1,10 +1,9 @@
+ # Git y Github
+-
+ ## ¿Que son Git y Github?
+ - **Git =>**
+     - Software de control de versiones, solo guarda los cambios especificos.
+     - Creador Linus Torvalds, es Open Source.
+-    - Anteriormente era un problema el trabajar en proyecdtos grandes, es un estandar actualmente muy usado.
++    - Anteriormente era un problema el trabajar en proyectos grandes, es un estandar actualmente muy usado.
+     - Aumenta productividad y se utiliza a traves de la terminal.
+
+ ## Configuracion Inicial de `git init` y `config`
+@@ -140,3 +139,19 @@ Para fusionar los cambios de una rama a otra es necesario utilizar el comando `g
+ ### Eliminar o borrar una rama
+ Para eliminar una rama de manera local que no se utilizara mas se utiliza el comando `git branch -D <nombre rama a eliminar>`
+ ## Volviendo en el Tiempo en Git: reset y revert
++La diferencia entre ambos:
++- `git reset` El comando reset te devuelve a un commit anterior, eliminando los cambios en el historial como si nunca hubieran ocurrido.
++- `git revert` Crea un nuevo commit que "revierte" los cambios realizados por un commit especifico.
++
++Manera de ejecutar los comandos:
++- `git revert <id commit a revertir>` Se mostrara un mensaje del nuevo commit que se creara con el commit que se revirtio
++- `git reset --hard <id commit a volver>` Se eliminaran los commits/historial hasta antes de este identificador.
++- Se tienen 3 parametros importantes:
++  - `soft` que permite eliminar los archivos
++  - `mixed` que permite regresar los commits
++  - `hard` permite deshacer todos los cambios **(esta es la ultima opcion a utilizar)**
++
++Los problemas que resuelven:
++- Correccion de errores
++- Limpieza del historial
++- Manejo de conflictos entre algunas ramas.
+```
+Para eliminar un tag se utiliza el comando `git tag -d <tag a eliminar>` esto no altera el historial de commits
+```
+┌─(~/Workspace/git-github)─────────────────────────────────────────────────────────────────────────────────────────────────(junior@JRODRIGUEV-NH01:pts/4)─┐
+└─(21:52:37 on main ✹)──> git tag -d v1.0                                                                                                   ──(Sun,Jan12)─┘
+Deleted tag 'v1.0' (was 47ba34d)
+```
+### git checkout
+Si se quiere hacer una revision de un punto en particular sin eliminar el avance realizado se puede realizar con el comando `git checkout <identificador commit>`
+Pra volver al punto del principio se utiliza el comando `git checkout main`
