@@ -1,10 +1,9 @@
 # Git y Github
-
 ## ¿Que son Git y Github?
 - **Git =>** 
     - Software de control de versiones, solo guarda los cambios especificos.
     - Creador Linus Torvalds, es Open Source.
-    - Anteriormente era un problema el trabajar en proyecdtos grandes, es un estandar actualmente muy usado.
+    - Anteriormente era un problema el trabajar en proyectos grandes, es un estandar actualmente muy usado.
     - Aumenta productividad y se utiliza a traves de la terminal.
 
 ## Configuracion Inicial de `git init` y `config`
@@ -140,3 +139,19 @@ Para fusionar los cambios de una rama a otra es necesario utilizar el comando `g
 ### Eliminar o borrar una rama
 Para eliminar una rama de manera local que no se utilizara mas se utiliza el comando `git branch -D <nombre rama a eliminar>`
 ## Volviendo en el Tiempo en Git: reset y revert
+La diferencia entre ambos:
+- `git reset` El comando reset te devuelve a un commit anterior, eliminando los cambios en el historial como si nunca hubieran ocurrido.
+- `git revert` Crea un nuevo commit que "revierte" los cambios realizados por un commit especifico.
+
+Manera de ejecutar los comandos:
+- `git revert <id commit a revertir>` Se mostrara un mensaje del nuevo commit que se creara con el commit que se revirtio
+- `git reset --hard <id commit a volver>` Se eliminaran los commits/historial hasta antes de este identificador.
+- Se tienen 3 parametros importantes:
+  - `soft` que permite eliminar los archivos
+  - `mixed` que permite regresar los commits
+  - `hard` permite deshacer todos los cambios **(esta es la ultima opcion a utilizar)**
+
+Los problemas que resuelven:
+- Correccion de errores
+- Limpieza del historial
+- Manejo de conflictos entre algunas ramas.
