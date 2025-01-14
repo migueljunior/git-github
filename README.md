@@ -405,3 +405,17 @@ La manera mas sencilla de solucionarlo es decidiendo que es lo que se mantendra 
 Basicamente es utilizar todo lo que sabemos via terminal pero utilizando la UI de VS Code.
 
 **Disclamer: Personalmente prefiero utilizar la terminal asi que no se puso enfasis en esta clase.**
+
+## Por que GitHub es clave para los Desarrolladores
+En un entorno productivo se compartira el codigo con otros colegas de trabajo, GitHub es una plataforma en la nube que utiliza git como su nucleo, otras plataformas son:
+- BitBucket.
+- GitLab.
+- Azure DevOps.
+- AWS CodeCommit.
+- CloudeSource. (Google)
+
+GitHub fue lanzado en febrero de 2018, Microsoft lo compro, y desde su lanzamiento evoluciono de manera muy drastica, ayuda a colaborar de manera remota entre varias personas. La plataforma tiene los siguientes 4 pilares para entregar software seguro y escalable:
+- **AI:** La inteligencia artificial implementada.
+- **Colaboracion:** Colaboracion con herramientas eficientes.
+- **Productividad:** Automatizar herramientas rutinarias.
+- **Seguridad y Escalabilidad:** Utiliza desde el inicio protegiendo el codigo y la plataforma se adapta a las necesidades de los desarrolladores para ser mas escalable.
