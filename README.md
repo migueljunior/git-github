@@ -401,3 +401,7 @@ Date:   Sat Nov 16 18:20:28 2024 +0000
 En un entorno real cuando se trabaja en equipo, es posible que varias personas trabajen en un mismo archivo, lo que genera un conflicto de ramas.
 ![Conflictos](./img/Conflictos.png)
 La manera mas sencilla de solucionarlo es decidiendo que es lo que se mantendra para la version final.
+## Usando Git desde Visual Studio Code
+Basicamente es utilizar todo lo que sabemos via terminal pero utilizando la UI de VS Code.
+
+**Disclamer: Personalmente prefiero utilizar la terminal asi que no se puso enfasis en esta clase.**
