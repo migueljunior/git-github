@@ -397,3 +397,7 @@ Date:   Sat Nov 16 18:20:28 2024 +0000
 
     Agregando notas de trabajo con ramas
 ```
+## Como resolver Conflictos de Ramas en Git
+En un entorno real cuando se trabaja en equipo, es posible que varias personas trabajen en un mismo archivo, lo que genera un conflicto de ramas.
+![Conflictos](./img/Conflictos.png)
+La manera mas sencilla de solucionarlo es decidiendo que es lo que se mantendra para la version final.
