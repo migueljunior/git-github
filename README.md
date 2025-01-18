@@ -419,3 +419,6 @@ GitHub fue lanzado en febrero de 2018, Microsoft lo compro, y desde su lanzamien
 - **Colaboracion:** Colaboracion con herramientas eficientes.
 - **Productividad:** Automatizar herramientas rutinarias.
 - **Seguridad y Escalabilidad:** Utiliza desde el inicio protegiendo el codigo y la plataforma se adapta a las necesidades de los desarrolladores para ser mas escalable.
+
+## Creacion y configuracion de cuetna de GitHub
+Basicamente es la creacion de una cuenta de GitHub, tambien la actualizacion de datos y la configuracion de seguridad de 2FA.
