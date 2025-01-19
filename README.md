@@ -430,3 +430,10 @@ Basicamente es la creacion de una cuenta de GitHub, tambien la actualizacion de 
 
 El comando `git init` sera reemplazado por la creacion de un repositorio remoto, y asi descargarlo y un grupo de personas podra realizar cambios locales y poder subirlo al repositrorio remoto, tambien poder tener la revision de codigo antes de combinarlo con el codigo en la rama principal.
 ![GitHub Flow](./img/GitHub-Flow.png)
+
+## Gestion de Repositorios en GitHub
+Explica la creacion de un nuevo repositorio. Se puede utilizar un template.
+
+La manera de agregar a colaboradores es la siguiente `settings > Collaborators` tiene que ser una persona con una cuenta ya creada y la persona tiene que aceptar la invitacion.
+
+La clonacion del repositorio con el comando `git clone <repositorio URL>` reemplaza al comando `git init`
