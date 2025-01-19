@@ -489,5 +489,9 @@ Generar la llave SSH en el entorno linux:
 - `ssh-keygen -t ed25519 -C "email@dominio.com"`
 - `eval "$(ssh-agent -s)"`
 - `ssh-add <ubicacion llave privada>`
+
 Agregar la llave publica:
 - Copiar la llave publica y copiarla en la seccion `Settings > SSH and GPG keys`
+
+Verificacion de coneccion:
+- `ssh -T git@github.com`
