@@ -422,3 +422,11 @@ GitHub fue lanzado en febrero de 2018, Microsoft lo compro, y desde su lanzamien
 
 ## Creacion y configuracion de cuetna de GitHub
 Basicamente es la creacion de una cuenta de GitHub, tambien la actualizacion de datos y la configuracion de seguridad de 2FA.
+
+## Como integrar Git y Github en un flujo de trabajo profesional
+- **Git:** Software de control de versiones para rastrear cambios en los archivos
+- **GitHub:** Plataforma para trabajar en equipo mediante repositorios remotos
+- **GitBash:** Linea de comandos para ejecutar comandos de Git
+
+El comando `git init` sera reemplazado por la creacion de un repositorio remoto, y asi descargarlo y un grupo de personas podra realizar cambios locales y poder subirlo al repositrorio remoto, tambien poder tener la revision de codigo antes de combinarlo con el codigo en la rama principal.
+![GitHub Flow](./img/GitHub-Flow.png)
