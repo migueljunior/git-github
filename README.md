@@ -482,4 +482,12 @@ Github Actions es un tema de lo más complicado, el costo de las Actions depende
 | Team| 3,000 minutos de ejecución|
 | Enterprise| 50,000 minutos de ejecución|
 
-Para mayor informacion sobre los precios se pueden ver en el siguiente link [Precios GitHub](https://github.com/pricing)
+> Para mayor informacion sobre los precios se pueden ver en el siguiente link [Precios GitHub](https://github.com/pricing)
+
+## Configuracion de llaves SSH
+Generar la llave SSH en el entorno linux:
+- `ssh-keygen -t ed25519 -C "email@dominio.com"`
+- `eval "$(ssh-agent -s)"`
+- `ssh-add <ubicacion llave privada>`
+Agregar la llave publica:
+- Copiar la llave publica y copiarla en la seccion `Settings > SSH and GPG keys`
