@@ -437,3 +437,49 @@ Explica la creacion de un nuevo repositorio. Se puede utilizar un template.
 La manera de agregar a colaboradores es la siguiente `settings > Collaborators` tiene que ser una persona con una cuenta ya creada y la persona tiene que aceptar la invitacion.
 
 La clonacion del repositorio con el comando `git clone <repositorio URL>` reemplaza al comando `git init`
+
+## Productos de GitHub
+Hay que tener en cuenta lo siguiente: Si un servicio o herramienta que estás utilizando no está ayudando a tu organización, entonces la está perjudicando.
+
+Los servicios (Al menos los que se veran en la clase) de Github son los siguientes:
+- Repositorios
+- Codespaces
+- Github Web editor
+- Github Actions
+
+Los precios de cada servicios son los siguientes:
+### Repositorios
+Los repositorios de Github ya sean públicos o privados son gratuitos y sin un límite en específico en la cantidad de cuántos puedes tener, es decir, sin importar si se trata de una cuenta de pago o gratuita podrás crear tantos repositorios como gustes, así que por este tema no es necesario preocuparte, esta no es una diferencia entre todos los planes, tanto gratuitos como de pago.
+
+### Codespaces
+Este servicio tiene una capa gratuita y una de pago la cual es la siguiente:
+
+| Núcleos | Costo por hora | Tiempo de uso gratuito |
+|----------|----------|----------|
+| 2 núcleos| $0.18 USD por hora| 60 horas gratuitas|
+| 4 núcleos| $0.36 USD por hora| 30 horas gratuitas|
+| 8 núcleos| $0.72 USD por hora| 15 horas gratuitas|
+| 16 núcleos| $1.44 USD por hora| No aplica|
+| 32 núcleos| $2.88 USD por hora| No aplica|
+
+En cuánto a almacenamiento también hay un costo asociado a ello.
+
+| Categoría | Costo | Datos gratuitos |
+|----------|----------|----------|
+| Almacenamiento| $0.07 USD por mes| 15 GB gratuitos mensuales|
+
+> [!IMPORTANT]
+> Cada mes se renuevan estos datos, así que si algo sucede simplemente tocará esperar.
+
+### Github web editor
+¡Buenas noticias aquí! Al igual que los repositorios, esta característica está presente en todos los planes de todos los niveles, sin costo en ningún escenario y sin límite de uso, esencialmente se trata de una característica que podemos aprovechar y aprender a utilizar mucho si preocuparnos por el costo.
+
+### Github Actions
+Github Actions es un tema de lo más complicado, el costo de las Actions depende mucho del sistema operativo, la capacidad del agente, obviamente el hardware y muchas cosas más; sin embargo, para los principiantes (y me incluyo en esta categoría porque ni de broma recuerdo todas las configuraciones) la mejor manera de evaluar y de guiarte es por medio del consumo por minutos, en la siguiente tabla podrás ver una buena referencia de los planes.
+| Plan | Consumo de minutos |
+|----------|----------|
+| Gratuito| 2,000 minutos de ejecución|
+| Team| 3,000 minutos de ejecución|
+| Enterprise| 50,000 minutos de ejecución|
+
+Para mayor informacion sobre los precios se pueden ver en el siguiente link [Precios GitHub](https://github.com/pricing)
