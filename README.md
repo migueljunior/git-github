@@ -495,3 +495,14 @@ Agregar la llave publica:
 
 Verificacion de coneccion:
 - `ssh -T git@github.com`
+
+## Clon, fork y estrellas a repositorios
+### Fork
+Un fork es un repositorio que se encuentra en la cuenta de alguien mas, pero se realiza una copia a la cuenta propia.
+
+Si existe actualizaciones en el repositorio original, no se veran reflejados en el repositorio que fue `forkeado`
+
+![Fork](./img/Fork.png)
+
+### Estrellas
+Una estrella es una manera de realizar seguimiento a los repositorios favoritos, es como poner una referencia para encontrar ese repositorio de manera rapida.
