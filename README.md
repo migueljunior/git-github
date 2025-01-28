@@ -506,3 +506,14 @@ Si existe actualizaciones en el repositorio original, no se veran reflejados en 
 
 ### Estrellas
 Una estrella es una manera de realizar seguimiento a los repositorios favoritos, es como poner una referencia para encontrar ese repositorio de manera rapida.
+
+## Trabajo con repositorios remotos: push, pull y fetch
+- **Git Pull:** Obtener informacion de mi repositorio remoto.
+- **Git Push:** Subir informacion del entorno local al servidor.
+- **Git Fetch:** Se obtienen los cambios del repositorio remoto, obtiene los cambios y no los mezcla de manera automatica.
+
+![Push y Pull](./img/push_pull.png)
+
+## Gestion de Issues y Discussions en GitHub
+Un issue es un ticket de seguimiento que permite rastrear tareas, errores y solicitudes dentro de un proyecto.
+Para crear un issue se encuentran en el tab `Issues` des repositorio, crearlo con un titulo, descripcion incluso asignarlo a personas, colocar labels y proyectos de la misma manera que Jira.
