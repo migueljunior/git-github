@@ -2,7 +2,7 @@
 
 ## ¿Que son Git y Github?
 
-- **Git =>** 
+- **Git =>**
   - Software de control de versiones, solo guarda los cambios especificos.
   - Creador Linus Torvalds, es Open Source.
   - Anteriormente era un problema el trabajar en proyectos grandes, es un estandar actualmente muy usado.
@@ -37,6 +37,7 @@ git config --global user.email "<email>"
 ```
 
 Para poder ver las configuraciones:
+
 ``` CLI
 git config --list
 // Ejemplo de Output
@@ -46,6 +47,7 @@ init.defaultbranch=main
 ```
 
 ## Comandos Basicos de Git: add, commit y log
+
 El comando `git init` crea una carpte oculta con el nombre `.git` donde se guarda toda la informacion de los cambios realizados.
 
 ``` CLI
@@ -613,3 +615,45 @@ Para ingresar se va al tab **Projects** se tiene plantillas para diferentes cirs
 ## Automatizacion y Gestion de Proyectos en GitHub
 
 Automatizar los tikcets creados segun el comportamiento del repositorio, esto se ve en projects dentro de un repositorio y vincular el repositorio con un proyecto creado, tambien se puede editar los comportamientos al lado de las estadisticas de los tickets.
+
+## Documentación en GitHub con Markdown
+
+En las clases anteriores has visto la relevancia de trabajar con Markdown y lo mucho que este lenguaje te puede ayudar para crear una gran documentación. En esta clase lo que veremos son algunos de los muchísimos recursos que puedes utilizar para poder escribir de una gran manera utilizando Markdown de la mejor manera posible. ¡Comencemos!
+
+[Documentación de Markdown](https://www.markdownguide.org/)
+
+Simplemente, la mejor referencia para conocer todo lo que se puede hacer con Markdown dentro de los documentos, aquí puedes comenzar a leer mucho.
+
+Mi primera sugerencia es irte a la opción de [Cheat Sheet](https://www.markdownguide.org/cheat-sheet/), en esta sección podrás encontrar todo lo que puedes hacer, desde la sintaxis básica hasta la extendida. Lo mejor que puedes hacer comenzar a practicar aquí con esto, la verdad es que si sabes usar estas características ya estás dominando el 90% de todo el trabajo.
+
+También considera que Markdown es compatible con algunas funciones de html como , lo que te permitiría jugar un poco más con el diseño de tu documento.
+
+### Extensión de Markdown para VS Code
+
+Ya que conoces lo que Markdown puede hacer y su sintaxis lo mejor que puedes hacer es instalar la extensión de Markdown dentro de VS Code, esto te puede llevar a un nivel mucho más avanzado de documentación porque te puede ayudar con la estructura del proyecto mostrándote las reglas que es recomendable no dejar en el documento.
+
+Puedes encontrar el enlace de la extensión [aquí.](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
+
+### Diagramas Mermaid
+
+Dejando de lado la funcionalidad básica de lo que puedes hacer con los markdown y VS Code podemos dar un paso adelante y utilizar una herramienta que te hará hacer documentos de otro nivel con los diagramas mermaid.
+
+Estos diagramas te permiten diseñar gráficas de muchos niveles y personalizarlas con la complejidad que deseas.
+
+```mermaid
+gitGraph
+    commit
+    commit
+    branch develop
+    checkout develop
+    commit
+    commit
+    checkout main
+    merge develop
+    commit
+    commit
+```
+
+Hacer diagramas así es muy útil para representar flujos de trabajo de una manera visual y mucho más cómodos de entender, además, una ventaja adicional, es que no se requiere ninguna instalación o configuración adicional, simplemente agregas el diagrama y todo aparece de maravilla.
+
+Para poder jugar más con el código mermaid en tus documentos, lo mejor es visitar el [visualizador de diagramas de mermaid aquí.](https://mermaid.live/edit)
