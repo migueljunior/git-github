@@ -530,3 +530,6 @@ Para realizar un Pull Request se utiliza el boton **Comparar y Pull Request** ti
 Projects es una herramienta para la planificacion y el seguimiento del trabajo en GitHub.
 
 Para ingresar se va al tab **Projects** se tiene plantillas para diferentes cirscunstancias. Basicamente es un tablero de SCRUM el cual fue creado.
+
+## Automatizacion y Gestion de Proyectos en GitHub
+Automatizar los tikcets creados segun el comportamiento del repositorio, esto se ve en projects dentro de un repositorio y vincular el repositorio con un proyecto creado, tambien se puede editar los comportamientos al lado de las estadisticas de los tickets.
