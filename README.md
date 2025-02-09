@@ -526,3 +526,7 @@ Lo mas interesante es no tener conflictos al momento de subir cambios de diferen
 
 Para realizar un Pull Request se utiliza el boton **Comparar y Pull Request** tiene que ser lo mas detallado posible.
 
+## Introduccion a GitHub Project
+Projects es una herramienta para la planificacion y el seguimiento del trabajo en GitHub.
+
+Para ingresar se va al tab **Projects** se tiene plantillas para diferentes cirscunstancias. Basicamente es un tablero de SCRUM el cual fue creado.
