@@ -517,3 +517,12 @@ Una estrella es una manera de realizar seguimiento a los repositorios favoritos,
 ## Gestion de Issues y Discussions en GitHub
 Un issue es un ticket de seguimiento que permite rastrear tareas, errores y solicitudes dentro de un proyecto.
 Para crear un issue se encuentran en el tab `Issues` des repositorio, crearlo con un titulo, descripcion incluso asignarlo a personas, colocar labels y proyectos de la misma manera que Jira.
+
+## Colaboracion sin errores: Pull Requests en GitHub
+Lo mas interesante es no tener conflictos al momento de subir cambios de diferentes personas en la misma rama, lo ideal es que las personas trabajen en ramas diferentes y despues fusionarlos
+![Pull Request](./img/Pull-Request.png)
+> [!IMPORTANT]
+> Para subir una rama nueva local a GitHub se utiliza el comando `git push --set-upstream origin <rama>` se puede simplificar con `git push -u origin <rama>`
+
+Para realizar un Pull Request se utiliza el boton **Comparar y Pull Request** tiene que ser lo mas detallado posible.
+
