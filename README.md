@@ -664,3 +664,8 @@ Markdown no es de git o github pero es una manera buena de documentar, se puede 
 Crear un repositorio con el mismo nombre del perfil del repositorio en GitHub, tiene que ser publico y agregar el archivo README.md
 Este archivo aparece en la portada de tu perfil.
 La siguiente herramienta sirve para personalizar no solo el perfil si no tambien varios repositorios para brindar informacion mas clara. [Static Badge](https://shields.io/badges)
+
+## Uso de Wikis
+
+En GitHub existen las wikis para generar documentacion de manera mas estructurada, es una de las opciones en los repositorios.
+![Wikis](./img/Wikis.png)
