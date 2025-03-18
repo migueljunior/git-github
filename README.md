@@ -669,3 +669,10 @@ La siguiente herramienta sirve para personalizar no solo el perfil si no tambien
 
 En GitHub existen las wikis para generar documentacion de manera mas estructurada, es una de las opciones en los repositorios.
 ![Wikis](./img/Wikis.png)
+
+## Como usar GitHub Gist
+
+Es una herramienta que permite crear un frangmento de codigo que no este relacionado con algun repositorio. Mas que todo es para tener retroalimentacion rapida.
+
+Se tiene que ingresar al siguiente link de [gist](https://gist.github.com/)
+Se comparte el fragmento de codigo y se le coloca un titulo y crear el gist secreto, despues de eso se comparte el link con el usuario deseado.
