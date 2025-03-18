@@ -657,3 +657,10 @@ gitGraph
 Hacer diagramas así es muy útil para representar flujos de trabajo de una manera visual y mucho más cómodos de entender, además, una ventaja adicional, es que no se requiere ninguna instalación o configuración adicional, simplemente agregas el diagrama y todo aparece de maravilla.
 
 Para poder jugar más con el código mermaid en tus documentos, lo mejor es visitar el [visualizador de diagramas de mermaid aquí.](https://mermaid.live/edit)
+
+## Personaliza tu Perfil de GitHub con Markdown
+
+Markdown no es de git o github pero es una manera buena de documentar, se puede crear como una carta de presentacion con Markdown en nuestro propio repositorio.
+Crear un repositorio con el mismo nombre del perfil del repositorio en GitHub, tiene que ser publico y agregar el archivo README.md
+Este archivo aparece en la portada de tu perfil.
+La siguiente herramienta sirve para personalizar no solo el perfil si no tambien varios repositorios para brindar informacion mas clara. [Static Badge](https://shields.io/badges)
